@@ -14,9 +14,6 @@
   padding-top: 4rem;
 }
 
-.header {
-  display: none;
-}
 .header__title {
   font-size: 4rem;
   color: hsl(235, 18%, 26%);
@@ -103,6 +100,10 @@
   bottom: 1px;
   left: 50%;
   transform: translateX(-50%);
+}
+
+.unsuccessful {
+  display: none;
 }
 
 * {

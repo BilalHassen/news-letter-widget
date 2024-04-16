@@ -21,6 +21,9 @@ form.addEventListener("submit", (e) => {
   } else if (!inputText.includes("@")) {
     alert("please enter a valid email");
     return;
+  } else {
+    header.classList.add("submitted");
+    displaySuccess(inputText);
   }
 });
 
@@ -50,6 +53,10 @@ function displaySuccess(inputText) {
   successButton.classList.add("success__button");
   successButton.textContent = "dismiss message";
   successElement.appendChild(successButton);
-}
 
-displaySuccess("bilalhassen799@gmail.com");
+  successElement.classList.remove("unsuccessful");
+
+  successButton.addEventListener("click", () => {
+    location.reload();
+  });
+}
