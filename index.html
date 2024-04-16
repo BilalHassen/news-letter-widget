@@ -7,6 +7,44 @@
     <link rel="stylesheet" href="/styles/style.css" />
   </head>
   <body>
-    <h1>Bilal Hassen</h1>
+    <section class="header">
+      <div class="header__image-container">
+        <img
+          class="header__image"
+          src="/assets/images/illustration-sign-up-mobile.svg"
+          alt="header-image"
+        />
+      </div>
+      <h1 class="header__title">Stay updated!</h1>
+      <p class="header__sub-para">
+        Join 60,000+ product managers receiving monthly updates on:
+      </p>
+      <div class="header__icon-container">
+        <img class="header__icon" src="./assets/images/icon-list.svg" />
+        <p class="header__para">Product discovery and building what matters</p>
+      </div>
+      <div class="header__icon-container">
+        <img class="header__icon" src="./assets/images/icon-list.svg" />
+        <p class="header__para">Measuring to ensure updates are a success</p>
+      </div>
+      <div class="header__icon-container">
+        <img class="header__icon" src="./assets/images/icon-list.svg" />
+        <p class="header__para">And much more!</p>
+      </div>
+      <!-- Newsletter Subscription Form -->
+      <form class="header__newsletter-form" action="/subscribe" method="post">
+        <label class="header__label" for="email">Email:</label>
+        <input
+          class="header__input"
+          type="email"
+          id="email"
+          name="email"
+          required
+        />
+        <button class="header__button" type="submit">
+          Subscribe to Monthly Newsletter
+        </button>
+      </form>
+    </section>
   </body>
 </html>
