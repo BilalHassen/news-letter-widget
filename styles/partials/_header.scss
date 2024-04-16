@@ -5,6 +5,8 @@
 }
 
 .header {
+  display: none;
+
   &__title {
     font-size: 4rem;
     color: hsl(235, 18%, 26%);
@@ -60,4 +62,8 @@
   &__label {
     font-size: 1.3rem;
   }
+}
+
+.submitted {
+  display: none;
 }
