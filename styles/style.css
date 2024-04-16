@@ -63,6 +63,10 @@
   font-size: 1.3rem;
 }
 
+#success {
+  display: none;
+}
+
 * {
   box-sizing: border-box;
   margin: 0;

@@ -39,15 +39,14 @@
           </div>
         </div>
         <!-- Newsletter Subscription Form -->
-        <form class="header__newsletter-form" action="/subscribe" method="post">
+        <form class="header__newsletter-form">
           <label class="header__label" for="email">Email address:</label><br />
           <input
             class="header__input"
-            type="email"
+            type="text"
             id="email"
             name="email"
             placeholder="email@company.com"
-            required
           />
           <button class="header__button" type="submit">
             Subscribe to Monthly Newsletter
@@ -55,5 +54,11 @@
         </form>
       </div>
     </section>
+    <section class="success" id="success">
+      <div class="success__text">
+        <h1>successfully signed up for the monthly news letter</h1>
+      </div>
+    </section>
+    <script src="/app.js"></script>
   </body>
 </html>
