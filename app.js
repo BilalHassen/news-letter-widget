@@ -1,9 +1,8 @@
 // get form element
 let form = document.querySelector(".header__newsletter-form");
-console.log(form);
+
 // get success element
 let successElement = document.querySelector(".success");
-console.log(successElement);
 
 // get header element
 let header = document.querySelector(".header");
@@ -12,7 +11,7 @@ form.addEventListener("submit", (e) => {
   e.preventDefault();
   // get input text value
   const inputText = document.querySelector(".header__input").value.trim();
-  console.log(typeof inputText);
+
   if (inputText === "") {
     alert("please fill in form");
     return;
